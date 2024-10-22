@@ -154,6 +154,7 @@ void *mm_malloc(size_t size)
 
 static void place(void *bp, size_t asize)
 {
+  //
     size_t csize = GET_SIZE(HDR_ADDR(bp)); // 현재 블록의 크기
 
     if ((csize - asize) >= (2 * DSIZE)) // 차이가 최소 블록 크기 16보다 같거나 크면 분할
