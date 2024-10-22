@@ -226,12 +226,11 @@ static void *find_fit(size_t asize)
 {
     void *bp;
 
-`
     /* 첫 번째 가용 블록 탐색
     최조 적합
     */
-    for (bp = heap_listp; GET_SIZE(HDRP(bp)) > 0; bp = NEXT_BLKP(bp)) {
-        if (!GET_ALLOC(HDRP(bp)) && (asize <= GET_SIZE(HDRP(bp)))) {
+    for (bp = heap_listp; GET_SIZE(HDR_ADDR(bp)) > 0; bp = NEXT_BLK(bp)) {
+        if (!GET_ALLOC(HDR_ADDR(bp)) && (asize <= GET_SIZE(HDR_ADDR(bp)))) {
             return bp;
         }
     }
