@@ -17,7 +17,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6c2e3cc-9d48-45d0-9795-321c52b5bb9c" name="변경" comment="first fit 점수 65" />
+    <list default="true" id="b6c2e3cc-9d48-45d0-9795-321c52b5bb9c" name="변경" comment="first fit 점수 65">
+      <change beforePath="$PROJECT_DIR$/mm.c" beforeDir="false" afterPath="$PROJECT_DIR$/mm.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +79,7 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "haru2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -93,8 +96,8 @@
       <window_info id="Pull Requests" />
       <window_info id="Learn" />
       <window_info id="DFA" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9679368" visible="true" weight="0.13203125" />
-      <window_info id="Commit" order="1" weight="0.13203125" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.9679368" weight="0.096093744" />
+      <window_info active="true" id="Commit" order="1" visible="true" weight="0.096093744" />
       <window_info id="Structure" order="2" sideWeight="0.032063197" side_tool="true" weight="0.10807292" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
@@ -145,7 +148,17 @@
       <updated>1729173908147</updated>
       <workItem from="1729173909908" duration="48522000" />
       <workItem from="1729494063373" duration="16816000" />
+      <workItem from="1729567057405" duration="137000" />
     </task>
+    <task id="LOCAL-00001" summary="first fit 점수 65">
+      <option name="closed" value="true" />
+      <created>1729567078308</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729567078308</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +174,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first fit 점수 65" />
+    <option name="LAST_COMMIT_MESSAGE" value="first fit 점수 65" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
