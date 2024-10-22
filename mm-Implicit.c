@@ -54,6 +54,8 @@ team_t team = {
 #define FTR_ADDR(bp) ((char *)(bp) + GET_SIZE(HDR_ADDR(bp)) - DSIZE) /* 푸터의 주소 */
 #define NEXT_BLK(bp) ((char *)(bp) + GET_SIZE(((char *)(bp) - WSIZE))) /* 다음 블록 */
 #define PREV_BLK(bp) ((char *)(bp) - GET_SIZE(((char *)(bp) - DSIZE))) /* 이전 블록 */
+#define GET_SUCC(bp) (*(void **)((char *)(bp) + WSIZE)) // 다음 가용 블록의 주소
+#define GET_PRED(bp) (*(void **)(bp))                   // 이전 가용 블록의 주소
 
 //가용 블록 리스트 의 첫번째 블럭 을 가리키는 포인터
 static char *heap_listp = NULL;
@@ -81,17 +83,43 @@ int mm_init(void){
     return 0;
 }
 
+//static void *find_fit(size_t asize)
+//{
+//    void *bp = mem_heap_lo() + 2 * WSIZE; // 첫번째 블록(주소: 힙의 첫 부분 + 8bytes)부터 탐색 시작
+//    while (GET_SIZE(HDR_ADDR(bp)) > 0)
+//    {
+//        if (!GET_ALLOC(HDR_ADDR(bp)) && (asize <= GET_SIZE(HDR_ADDR(bp)))) // 가용 상태이고, 사이즈가 적합하면
+//            return bp;                                             // 해당 블록 포인터 리턴
+//        bp = NEXT_BLK(bp);                                        // 조건에 맞지 않으면 다음 블록으로 이동해서 탐색을 이어감
+//    }
+//    return NULL;
+//}
+
 static void *find_fit(size_t asize)
 {
     void *bp = mem_heap_lo() + 2 * WSIZE; // 첫번째 블록(주소: 힙의 첫 부분 + 8bytes)부터 탐색 시작
-    while (GET_SIZE(HDR_ADDR(bp)) > 0)
+    void *best_bp = NULL; // 최적 블록 포인터 초기화
+    size_t best_size = 0; // 최적 블록의 크기 초기화
+
+    while (GET_SIZE(HDR_ADDR(bp)) > 0) // 블록의 크기가 0보다 큰 동안 탐색
     {
-        if (!GET_ALLOC(HDR_ADDR(bp)) && (asize <= GET_SIZE(HDR_ADDR(bp)))) // 가용 상태이고, 사이즈가 적합하면
-            return bp;                                             // 해당 블록 포인터 리턴
-        bp = NEXT_BLK(bp);                                        // 조건에 맞지 않으면 다음 블록으로 이동해서 탐색을 이어감
+        size_t block_size = GET_SIZE(HDR_ADDR(bp)); // 현재 블록의 크기 가져오기
+
+        // 가용 상태이고, 요청된 크기보다 크거나 같다면
+        if (!GET_ALLOC(HDR_ADDR(bp)) && (asize <= block_size))
+        {
+            // 첫 번째 적합 블록 또는 현재 블록이 더 작다면
+            if (best_bp == NULL || block_size < best_size)
+            {
+                best_bp = bp; // 최적 블록 업데이트
+                best_size = block_size; // 최적 크기 업데이트
+            }
+        }
+        bp = NEXT_BLK(bp); // 다음 블록으로 이동
     }
-    return NULL;
+    return best_bp; // 최적 블록 포인터 리턴 (없으면 NULL)
 }
+
 
 void *mm_malloc(size_t size)
 {

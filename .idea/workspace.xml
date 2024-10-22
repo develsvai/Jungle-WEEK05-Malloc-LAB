@@ -18,8 +18,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6c2e3cc-9d48-45d0-9795-321c52b5bb9c" name="변경" comment="first fit 점수 65">
+      <change afterPath="$PROJECT_DIR$/mm-Explicit.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mm.c" beforeDir="false" afterPath="$PROJECT_DIR$/mm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mm.c" beforeDir="false" afterPath="$PROJECT_DIR$/mm-Implicit.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +153,7 @@
       <updated>1729173908147</updated>
       <workItem from="1729173909908" duration="48522000" />
       <workItem from="1729494063373" duration="16816000" />
-      <workItem from="1729567057405" duration="1449000" />
+      <workItem from="1729567057405" duration="2527000" />
     </task>
     <task id="LOCAL-00001" summary="first fit 점수 65">
       <option name="closed" value="true" />
@@ -177,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729567214508</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="first fit 점수 65">
+      <option name="closed" value="true" />
+      <created>1729568545021</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729568545021</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
