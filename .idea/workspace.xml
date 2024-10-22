@@ -18,6 +18,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6c2e3cc-9d48-45d0-9795-321c52b5bb9c" name="변경" comment="first fit 점수 65">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mm.c" beforeDir="false" afterPath="$PROJECT_DIR$/mm.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="haru2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,12 +72,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "C/C++ 파일.mdriver.c.executor": "Run",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "haru2",
@@ -96,8 +99,8 @@
       <window_info id="Pull Requests" />
       <window_info id="Learn" />
       <window_info id="DFA" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.9679368" weight="0.096093744" />
-      <window_info active="true" id="Commit" order="1" visible="true" weight="0.096093744" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9679368" visible="true" weight="0.096093744" />
+      <window_info id="Commit" order="1" weight="0.096093744" />
       <window_info id="Structure" order="2" sideWeight="0.032063197" side_tool="true" weight="0.10807292" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
@@ -122,7 +125,7 @@
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
       <window_info anchor="right" id="Meson" order="5" />
-      <window_info anchor="right" id="Terminal" order="6" sideWeight="0.4995479" side_tool="true" weight="0.2643229" />
+      <window_info active="true" anchor="right" id="Terminal" order="6" sideWeight="0.4995479" side_tool="true" visible="true" weight="0.32994792" />
     </layout>
   </component>
   <component name="RunManager">
@@ -148,7 +151,7 @@
       <updated>1729173908147</updated>
       <workItem from="1729173909908" duration="48522000" />
       <workItem from="1729494063373" duration="16816000" />
-      <workItem from="1729567057405" duration="137000" />
+      <workItem from="1729567057405" duration="1449000" />
     </task>
     <task id="LOCAL-00001" summary="first fit 점수 65">
       <option name="closed" value="true" />
@@ -158,7 +161,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729567078308</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first fit 점수 65">
+      <option name="closed" value="true" />
+      <created>1729567204213</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729567204213</updated>
+    </task>
+    <task id="LOCAL-00003" summary="first fit 점수 65">
+      <option name="closed" value="true" />
+      <created>1729567214508</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729567214508</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
